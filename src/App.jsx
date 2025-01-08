@@ -4,13 +4,17 @@ import logoa1 from './assets/image/logoa 1.png'
 import vector from './assets/image/Vector.png'
 import headerPic from './assets/image/Objects.png'
 import viewDemo from './assets/image/Group 111.png'
+import logo1 from './assets/image/brand-01.png'
+import logo2 from './assets/image/brand-04.png'
+import logo3 from './assets/image/brand-06.png'
 
 function App() {
   
 
   return (
     <>
-      <div className='bg-background w-screen py-8 flex flex-row justify-evenly gap-64 border-b-2 border-gray'>
+    <div className='bg-gradient-to-b from-background to-white '>
+      <div className=' w-screen py-8 flex flex-row justify-evenly gap-64 border-b-2 border-gray'>
         <div>
           <img className='w-36'src={logoa1} alt="Logoa1" />
         </div>
@@ -19,11 +23,11 @@ function App() {
           </div>
           
       </div>
-      <div className='bg-background'>
+      <div>
         <img src={headerPic} alt="A man waring purple shirt" />
       </div>
 
-      <div className='bg-background flex flex-col items-center '>
+      <div className=' flex flex-col items-center '>
         <div className='bg-white text-l p-3 rounded-md text-purple font-bold'>Welcome QuickSpace</div>
         <div className='text-4xl text-primary font-bold py-2 pt-7 '>Satisfied Customer</div>
         <div className='text-4xl text-primary font-bold py-2'>Is the Best Business</div>
@@ -34,9 +38,16 @@ function App() {
         className='bg-button text-white py-4 px-20 font-semibold rounded-md'>Try Free
         </button>
         <div>
-          <img className='w-28 pt-7' src={viewDemo} alt="Click to view Demo" />
+          <img className='w-28 py-7' src={viewDemo} alt="Click to view Demo" />
         </div>
 
+      </div>
+      </div>
+
+      <div className='flex flex-row justify-around py-8 bg-white'>
+        <img className='h-8'src={logo1} alt="Logo1" />
+        <img className='h-8' src={logo2} alt="Logo2" />
+        <img className='h-8' src={logo3} alt="Logo3" />
       </div>
     </>
   )
