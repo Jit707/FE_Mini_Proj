@@ -14,6 +14,7 @@ import yellowRegtangle from './assets/image/Rectangle 124.png'
 import yellowPeople from './assets/image/Frame01.png'
 import orangeRegtangle from './assets/image/Rectangle 123.png'
 import orangeBand from './assets/image/Vector01.png'
+import discoverPicture from './assets/image/Group 5771.png'
 
 function App() {
   
@@ -57,12 +58,14 @@ function App() {
         <img className='h-8' src={logo3} alt="Logo3" />
       </div>
 
+
+
       <div>
         <div>
           <div className=' flex flex-col items-center '>
           <div className='text-4xl text-primary font-bold py-2 pt-7 '>Perfect Solution </div>
           <div className='text-4xl text-primary font-bold py-2'>For Your Business</div>
-          <div className='text-lg py-4 w-2/3 text-gray flex flex-col items-center'>
+          <div className='text-lg py-4  text-gray flex flex-col items-center'>
           <span>Graphs displaying your performance for</span> 
           <span>metrics like follower evolution, average</span>
           <span> rate per post and reach and impressions</span>
@@ -155,6 +158,28 @@ function App() {
       </div>
 
 
+    <div className='bg-gradient-to-t from-background to-white mt-36'>
+      <div className=' flex flex-col items-center '>
+
+        <div className='bg-background text-l p-3 rounded-md text-purple font-bold'>
+        Discover & Explore
+        </div>
+        <div className='text-3xl text-primary font-bold flex flex-col items-center my-4'>
+          <div>Join An Attractive &</div>
+          <div>Personaliozed</div>
+        </div>
+        <div className='text-lg pt-4  text-gray flex flex-col items-center'>
+        <div>Graphs displaying your performance for </div>
+        <div>metrics like follower evolution, average </div>
+        <div>rate per post and reach and impressions </div>
+        <div>to give you the insights.  </div>
+        </div>
+        <div className='mt-4'>
+          <img src={discoverPicture} alt="Investment Graph" />
+        </div>     
+
+      </div>     
+    </div>
       
     </>
   )
