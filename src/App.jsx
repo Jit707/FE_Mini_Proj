@@ -22,6 +22,7 @@ import photo2 from './assets/image/Photo01.png'
 import slideVector from './assets/image/Group 5732.png'
 import dropVector from './assets/image/Frame02.png'
 import checkMark from './assets/image/Checkmark-15.png'
+import slidekMark from './assets/image/Group 52.png'
 
 function App() {
   
@@ -241,7 +242,7 @@ function App() {
       </div>
     </div>
 
-    <div className='bg-gradient-to-b from-background to-white mt-36'>
+    <div className='bg-gradient-to-b from-background to-white mt-36 mb-12'>
 
       <div className='flex flex-col items-center'>
         <div className='mt-10 text-2xl text-primary font-bold'>Expand your options with a</div>
@@ -298,7 +299,19 @@ function App() {
       </div>
     </div>
 
-    <div>
+    <div className='bg-blue flex flex-col items-center pb-12'>
+      <div className='text-4xl text-primary font-bold flex flex-col items-center mt-8'>
+      <div>Sign up to our</div>
+      <div> newsletter</div>
+      </div>
+      <span className='mt-8 text-gray'>Recive latest news, updates and many</span>
+      <span className='text-gray'>other news every week.</span>
+      <div className='bg-white text-gray rounded-3xl h-14 w-72 mt-6 pl-6 flex flex-row items-center'>
+      Enter your email address
+      </div>
+      <div className='absolute '> 
+        <img className='h-12 relative top-56 left-28' src={slidekMark} alt="Slide Vector" />
+      </div>
       
     </div>
       

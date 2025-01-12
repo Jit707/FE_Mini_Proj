@@ -11,8 +11,8 @@ export default {
     'purple' : 'hsla(232, 67%, 48%, 0.8)',
     'gray':'hsla(236, 12%, 44%, 1)',
     'white':'hsl(212 100% 100%)',
-    'button':'hsla(232, 67%, 48%, 1)'
-      ,
+    'button':'hsla(232, 67%, 48%, 1)',
+    'blue':'hsla(205, 100%, 95%, 1)',
     },
     extend: {},
   },
