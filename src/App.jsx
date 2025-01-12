@@ -19,6 +19,9 @@ import blueCircle from './assets/image/Element.png'
 import whiteQuote from './assets/image/quote-left.png'
 import photo1 from './assets/image/Photo.png'
 import photo2 from './assets/image/Photo01.png'
+import slideVector from './assets/image/Group 5732.png'
+import dropVector from './assets/image/Frame02.png'
+import checkMark from './assets/image/Checkmark-15.png'
 
 function App() {
   
@@ -181,8 +184,7 @@ function App() {
         <div className='mt-4'>
           <img src={discoverPicture} alt="Investment Graph" />
         </div>     
-
-      </div>     
+     </div>     
     </div>
 
 
@@ -235,10 +237,69 @@ function App() {
             <div className='text-gray'>EhyaScape Client</div>
             </div>           
           </div>
-
         </div>
-
       </div>
+    </div>
+
+    <div className='bg-gradient-to-b from-background to-white mt-36'>
+
+      <div className='flex flex-col items-center'>
+        <div className='mt-10 text-2xl text-primary font-bold'>Expand your options with a</div>
+        <div className='text-2xl text-primary font-bold'>subscription</div>
+        <div className='flex flex-col items-center mt-8 text-gray'>
+          <span>Graphs displaying your performance</span>
+          <span> for metrics like follower evolution,</span>
+          <span>average rate per post and reach and</span>
+          <span> impressions to give you the insights.</span>
+        </div>
+        <div className='flex flex-row justify-around gap-4 mt-10 text-gray'>
+          <span>Bill Montly</span>
+          <img className='h-6' src={slideVector} alt="Slide button" />
+          <span>Bill Anually</span>
+        </div>
+      </div>
+
+      <div className='flex flex-col mt-8 mx-2 bg-white rounded-xl hover:shadow-2xl'>
+        <div className='ml-12 mt-8'>
+        <div className='flex flex-row items-center text-3xl text-primary font-bold'>
+          <div>Standard</div>
+          <img className='h-10' src={dropVector} alt="Drop Down" />
+        </div>
+        <div className='text-gray'>For a small company that</div>
+        <div className='text-gray'> wants to show what it's worth.</div>
+        <div className='flex flex-row gap-2 items-center mt-4'>
+          <div className='text-3xl text-primary font-bold'>$300</div>
+          <div className='text-gray'>Per User / Per Year</div>
+        </div>
+        <div className='flex flex-row items-center gap-2 mt-12 text-gray'>
+          <img className='h-4' src={checkMark} alt="Check Mark" />
+          <span>Access to editing all blocks</span>
+        </div>
+        <div className='flex flex-row items-center gap-2 text-gray'>
+          <img className='h-4' src={checkMark} alt="Check Mark" />
+          <span>Editing blocks together</span>
+        </div>
+        <div className='flex flex-row items-center gap-2 text-gray'>
+          <img className='h-4' src={checkMark} alt="Check Mark" />
+          <span>Access to all premium icons</span>
+        </div>
+        <div className='flex flex-row items-center gap-2 text-gray'>
+          <img className='h-4' src={checkMark} alt="Check Mark" />
+          <span>A dedicated domain</span>
+        </div>
+        <div className='flex flex-row items-center gap-2 text-gray'>
+          <img className='h-4' src={checkMark} alt="Check Mark" />
+          <span>Ability to integrate with CMS</span>
+        </div>
+        <button className='bg-purple mt-10 w-64 h-12 text-white font-bold rounded-md mb-12 '>
+          Start 14 Days Free Trial
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      
     </div>
       
     </>
