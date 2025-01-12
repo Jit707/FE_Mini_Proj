@@ -15,6 +15,10 @@ import yellowPeople from './assets/image/Frame01.png'
 import orangeRegtangle from './assets/image/Rectangle 123.png'
 import orangeBand from './assets/image/Vector01.png'
 import discoverPicture from './assets/image/Group 5771.png'
+import blueCircle from './assets/image/Element.png'
+import whiteQuote from './assets/image/quote-left.png'
+import photo1 from './assets/image/Photo.png'
+import photo2 from './assets/image/Photo01.png'
 
 function App() {
   
@@ -179,6 +183,62 @@ function App() {
         </div>     
 
       </div>     
+    </div>
+
+
+    <div className='bg-white'>
+      <div>
+
+        <div className='mt-32'>
+          <img className='absolute h-24' src={blueCircle} alt="Blue Circle" />
+          <img className='relative h-8 top-5 left-4' src={whiteQuote} alt="White Quote" />
+          <div className='relative top-8 left-10 text-4xl text-primary font-bold flex flex-col'>
+          <div>What Our Customer</div>
+          <div>are Saying</div>
+          </div>
+        </div>
+        <div className='mt-20 ml-4'>
+
+          <div className='text-xl text-primary font-semibold'>
+          <div>Great Services with Good Quality</div>
+          <div>Photographers PhotoScape</div>
+          </div>
+          <div className='text-md pt-4  text-gray flex flex-col'>
+            <span>I truly have nothing but the highest praise and </span>
+            <span>appreciation for all that you did for us. Saving me on</span>
+            <span>the video montage projection was huge, and even</span>
+            <span>more important the amazing pictures. </span>
+          </div>
+          <div className='flex flew-row items-center gap-4 mt-6'>
+            <div><img className='h-16' src={photo1} alt="Woman Photo" /></div>
+            <div>
+            <div className='text-primary font-bold '>Pricillia Makalew</div>
+            <div className='text-gray'>EhyaScape Client</div>
+            </div>           
+          </div>
+          <div className='h-px w-80 bg-gray mt-8'></div>
+
+          <div className='text-xl text-primary font-semibold mt-12'>
+          <div>Really love the Fast Delivery Photos</div>
+          <div>File Service. Just 48 Hours. It’s Crazy!</div>
+          </div>
+          <div className='text-md pt-4  text-gray flex flex-col'>
+            <span>I truly have nothing but the highest praise and </span>
+            <span>appreciation for all that you did for us. Saving me on</span>
+            <span>the video montage projection was huge, and even</span>
+            <span>more important the amazing pictures. </span>
+          </div>
+          <div className='flex flew-row items-center gap-4 mt-6'>
+            <div><img className='h-16' src={photo2} alt="Woman Photo" /></div>
+            <div>
+            <div className='text-primary font-bold '>Dany Olmo</div>
+            <div className='text-gray'>EhyaScape Client</div>
+            </div>           
+          </div>
+
+        </div>
+
+      </div>
     </div>
       
     </>
