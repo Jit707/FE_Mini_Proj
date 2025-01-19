@@ -29,6 +29,12 @@ import linkInVector from './assets/image/Frame4.png'
 import twitterVector from './assets/image/Frame5.png'
 import facebookVector from './assets/image/Vector2.png'
 import logo4 from './assets/image/brand-07.png'
+import instagram from './assets/image/instagram.png'
+import twitter from './assets/image/twitter.png'
+import google from './assets/image/google.png'
+import location from './assets/image/Vector03.png'
+import phone from './assets/image/Vector04.png'
+import mail from './assets/image/Vector05.png'
 
 function App() {
   
@@ -38,12 +44,12 @@ function App() {
     <div className='bg-gradient-to-b from-background to-white w-screen '>
       <div className=' py-8 flex flex-row justify-around items-center gap-36 border-b-2 border-blue'>
         <div>
-          <img className='w-36'src={logoa1} alt="Logoa1" />
+          <img className='w-36 'src={logoa1} alt="Logoa1" />
         </div>
         <div>
           <img className='w-5 lg:hidden' src={vector} alt="vector" />
           </div>
-          <div className='flex flex-row gap-8 items-center text-primary max-sm:hidden'>
+          <div className='flex flex-row gap-8 items-center text-primary max-lg:hidden'>
             <div>Company</div>
             <div>Feature</div>
             <div>Pricing</div>
@@ -259,7 +265,7 @@ function App() {
           </div>
           </div>
           <div className='h-px w-80 bg-gray mt-8 lg:hidden'></div>
-          <div className='h-80 w-px bg-gray mt-8 max-sm:hidden'></div>
+          
 
 <div>
           <div className='text-xl text-primary font-semibold mt-12 lg:mt-0'>
@@ -426,17 +432,18 @@ function App() {
     <div className='bg-blue flex flex-col items-center pb-12 lg:pb-0 lg:bg-white'>
       <div className='flex flex-col items-center lg:border-solid lg:bg-blue lg:py-16 lg:px-96 lg:rounded-3xl'>
       <div className='text-4xl text-primary font-bold flex flex-col items-center mt-8
-      lg:flex lg:flex-row lg:gap-4'>
+      lg:hidden'>
       <div>Sign up to our</div>
       <div> newsletter</div>
       </div>
+      <div className='text-4xl text-primary font-bold max-lg:hidden'>Sign up to our newsletter</div>
       <span className='mt-8 text-gray'>Recive latest news, updates and many</span>
       <span className='text-gray'>other news every week.</span>
       <div className='bg-white text-gray rounded-3xl h-14 w-72 mt-6 pl-6 flex flex-row items-center'>
       Enter your email address
       </div>
-      <div className='absolute '> 
-        <img className='h-12 relative top-56 left-28 lg:top-44' src={slidekMark} alt="Slide Vector" />
+      <div className='relative bottom-12 left-28'> 
+        <img className='h-10' src={slidekMark} alt="Slide Vector" />
       </div>
       </div>
       </div>
@@ -479,9 +486,73 @@ function App() {
       </div>
 
       <div className='max-sm:hidden'>
+
+
+        <div className='flex flex-row items-start justify-around my-24'>
+
         <div>
-test
+        <img className='w-60 ' src={logoa1} alt="Quick Space Logo" />
+        <div className='flex flex-col gap-4 mt-12'>
+        <div className='flex flex-row items-center gap-4'>
+        <img className='h-4' src={mail} alt="E-Mail" />
+        <div className='text-md text-gray'>quickspace@gmail.com</div>
         </div>
+        <div className='flex flex-row items-center gap-4'>
+        <img className='h-4' src={phone} alt="Phone Vector" />
+        <div className='text-md text-gray'>548 457 3695 55</div>
+        </div>
+        </div>
+        </div>
+
+<div className='text-md text-gray'> 
+  <div className='font-bold'>Home</div>
+  <div className='mt-8 flex flex-col gap-4'>
+  <div>Accesibility</div>
+  <div>Knowlege Base</div>
+  <div>Documentation</div>
+  <div>User Group</div>
+  </div>
+</div>
+
+<div className='text-md text-gray'> 
+  <div className='font-bold'>Pages</div>
+  <div className='mt-8 flex flex-col gap-4'>
+  <div>Blogs</div>
+  <div>Community</div>
+  <div>Webinars</div>
+  <div>Videos</div>
+  </div>
+</div>
+
+<div className='text-md text-gray'>
+  <div className='font-bold'> Our Address</div>
+<div className='flex flex-row gap-2 mt-8 items-center'>
+  <img className='h-4' src={location} alt="Phone Vector" />
+  <div className='flex flex-col'>
+  <div> London, Newarea</div>
+  <div>road,04 England</div>
+  </div>
+  </div>
+  <div className='flex flex-row gap-2 mt-8'>
+  <img className='h-4' src={google} alt="Phone Vector" />
+  <img className='h-4' src={twitter} alt="Phone Vector" />
+  <img className='h-4' src={instagram} alt="Phone Vector" />
+  </div>
+  
+</div>
+
+
+</div>
+
+<div className='text-md text-gray flex flex-row justify-between mx-12 '>
+  <div>Copyright ©2020 Quicklinks</div>
+  <div className='flex flex-row gap-12'>
+  <div>Home</div>
+  <div>Team</div>
+  <div>Privacy Policy</div>
+  <div>Contact</div>
+  </div>
+</div>
       </div>
 
 
