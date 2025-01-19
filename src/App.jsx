@@ -23,6 +23,11 @@ import slideVector from './assets/image/Group 5732.png'
 import dropVector from './assets/image/Frame02.png'
 import checkMark from './assets/image/Checkmark-15.png'
 import slidekMark from './assets/image/Group 52.png'
+import purpleCircle from './assets/image/Ellipse 3.png'
+import youtubeVector from './assets/image/Frame3.png'
+import linkInVector from './assets/image/Frame4.png'
+import twitterVector from './assets/image/Frame5.png'
+import facebookVector from './assets/image/Vector2.png'
 
 function App() {
   
@@ -263,6 +268,43 @@ function App() {
       <div className='flex flex-col mt-8 mx-2 bg-white rounded-xl hover:shadow-2xl'>
         <div className='ml-12 mt-8'>
         <div className='flex flex-row items-center text-3xl text-primary font-bold'>
+          <div>Base</div>
+          <img className='h-10' src={dropVector} alt="Drop Down" />
+        </div>
+        <div className='text-gray'>Free start your project on</div>
+        <div className='text-gray'> our platform</div>
+        <div className='flex flex-row gap-2 items-center mt-4'>
+          <div className='text-3xl text-primary font-bold'>$0</div>
+          <div className='text-gray'>Per User / Per Year</div>
+        </div>
+        <div className='flex flex-row items-center gap-2 mt-12 text-gray'>
+          <img className='h-4' src={checkMark} alt="Check Mark" />
+          <span>Access to editing all blocks</span>
+        </div>
+        <div className='flex flex-row items-center gap-2 text-gray'>
+          <img className='h-4' src={checkMark} alt="Check Mark" />
+          <span>Editing blocks together</span>
+        </div>
+        <div className='flex flex-row items-center gap-2 text-gray'>
+          <img className='h-4' src={checkMark} alt="Check Mark" />
+          <span>Access to all premium icons</span>
+        </div>
+        <div className='flex flex-row items-center gap-2 text-gray'>
+          <img className='h-4' src={checkMark} alt="Check Mark" />
+          <span>A dedicated domain</span>
+        </div>
+        <div className='flex flex-row items-center gap-2 text-gray'>
+          <img className='h-4' src={checkMark} alt="Check Mark" />
+          <span>Ability to integrate with CMS</span>
+        </div>
+        <button className='bg-blue mt-10 w-64 h-12 text-purple font-bold rounded-md mb-12 '>
+          Try for Free
+          </button>
+        </div>
+      </div>
+      <div className='flex flex-col mt-8 mx-2 bg-white rounded-xl hover:shadow-2xl'>
+        <div className='ml-12 mt-8'>
+        <div className='flex flex-row items-center text-3xl text-primary font-bold'>
           <div>Standard</div>
           <img className='h-10' src={dropVector} alt="Drop Down" />
         </div>
@@ -297,6 +339,43 @@ function App() {
           </button>
         </div>
       </div>
+      <div className='flex flex-col mt-8 mx-2 bg-white rounded-xl hover:shadow-2xl'>
+        <div className='ml-12 mt-8'>
+        <div className='flex flex-row items-center text-3xl text-primary font-bold'>
+          <div>Unlimited</div>
+          <img className='h-10' src={dropVector} alt="Drop Down" />
+        </div>
+        <div className='text-gray'>For a large company that wants</div>
+        <div className='text-gray'> to achieve maximum returns</div>
+        <div className='flex flex-row gap-2 items-center mt-4'>
+          <div className='text-3xl text-primary font-bold'>$600</div>
+          <div className='text-gray'>Per User / Per Year</div>
+        </div>
+        <div className='flex flex-row items-center gap-2 mt-12 text-gray'>
+          <img className='h-4' src={checkMark} alt="Check Mark" />
+          <span>Access to editing all blocks</span>
+        </div>
+        <div className='flex flex-row items-center gap-2 text-gray'>
+          <img className='h-4' src={checkMark} alt="Check Mark" />
+          <span>Editing blocks together</span>
+        </div>
+        <div className='flex flex-row items-center gap-2 text-gray'>
+          <img className='h-4' src={checkMark} alt="Check Mark" />
+          <span>Access to all premium icons</span>
+        </div>
+        <div className='flex flex-row items-center gap-2 text-gray'>
+          <img className='h-4' src={checkMark} alt="Check Mark" />
+          <span>A dedicated domain</span>
+        </div>
+        <div className='flex flex-row items-center gap-2 text-gray'>
+          <img className='h-4' src={checkMark} alt="Check Mark" />
+          <span>Ability to integrate with CMS</span>
+        </div>
+        <button className='bg-blue mt-10 w-64 h-12 text-purple font-bold rounded-md mb-12 '>
+          Start 14 Days Free Trial
+          </button>
+        </div>
+      </div>
     </div>
 
     <div className='bg-blue flex flex-col items-center pb-12'>
@@ -312,9 +391,46 @@ function App() {
       <div className='absolute '> 
         <img className='h-12 relative top-56 left-28' src={slidekMark} alt="Slide Vector" />
       </div>
-      
-    </div>
-      
+      </div>
+
+
+      <div className='bg-white'>
+        <img className='w-64 mt-16 ml-4' src={logoa1} alt="Quick Space Logo" />
+        <div className='text-gray mt-10 ml-4'>
+          <span>Winged moving moveth created for shall and a</span>
+          <span>divide the their days male midst shall hath</span>
+          <span> doesn't won't for. Midst life.Over a great night.</span>
+        </div>
+        <div className='flex flex-row absolute ml-4 gap-4 mt-6'>
+        <img className='' src={purpleCircle} alt="Purplr Circle" />
+        <img className='' src={purpleCircle} alt="Purplr Circle" />
+        <img className='' src={purpleCircle} alt="Purplr Circle" />
+        <img className='' src={purpleCircle} alt="Purplr Circle" />
+        </div>
+        <div className='flex flex-row items-center ml-7 gap-8 mt-7'>
+        <img src={facebookVector} alt="Facebook Vecter" />
+        <img src={twitterVector} alt="Facebook Vecter" />
+        <img src={linkInVector} alt="Facebook Vecter" />
+        <img src={youtubeVector} alt="Facebook Vecter" />
+        </div>
+        <div className='grid grid-cols-1 divide-y-2 divide-blue text-primary font-bold text-xl mt-20 ml-4'>
+          <div className='flex flex-row items-center justify-between'>
+          <div className='pb-4'> Customer Support </div>
+          <img className='h-8' src={dropVector} alt="" />
+          </div>
+          <div className='flex flex-row items-center justify-between'>
+          <div className='py-4'> Quick Links</div>
+          <img className='h-8' src={dropVector} alt="" />
+          </div>
+          <div className='flex flex-row items-center justify-between'>
+          <div className='py-4'>Resources</div>
+          <img className='h-8' src={dropVector} alt="" />
+          </div>
+        </div>
+        <div className='flex flex-col items-center text-gray text-xl my-8'>Copyright ©2020 Quicklinks</div>
+      </div>
+
+
     </>
   )
 }
