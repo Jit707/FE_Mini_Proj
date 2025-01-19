@@ -28,6 +28,7 @@ import youtubeVector from './assets/image/Frame3.png'
 import linkInVector from './assets/image/Frame4.png'
 import twitterVector from './assets/image/Frame5.png'
 import facebookVector from './assets/image/Vector2.png'
+import logo4 from './assets/image/brand-07.png'
 
 function App() {
   
@@ -35,40 +36,58 @@ function App() {
   return (
     <>
     <div className='bg-gradient-to-b from-background to-white w-screen '>
-      <div className=' py-8 flex flex-row justify-around gap-36 border-b-2 border-gray'>
+      <div className=' py-8 flex flex-row justify-around items-center gap-36 border-b-2 border-blue'>
         <div>
           <img className='w-36'src={logoa1} alt="Logoa1" />
         </div>
         <div>
-          <img className='w-5' src={vector} alt="vector" />
+          <img className='w-5 lg:hidden' src={vector} alt="vector" />
           </div>
-          
-      </div>
-      <div>
+          <div className='flex flex-row gap-8 items-center text-primary max-sm:hidden'>
+            <div>Company</div>
+            <div>Feature</div>
+            <div>Pricing</div>
+            <div>Log In</div>
+            <button className='bg-purple text-white h-10 w-28 rounded-lg'>Try Free</button>
+          </div>
+                </div>
+
+      <div className='lg:flex lg:flex-row-reverse lg:justify-center lg:items-center'>        
+      <div className='flex flex-col items-center'>
         <img src={headerPic} alt="A man waring purple shirt" />
       </div>
 
-      <div className=' flex flex-col items-center '>
+
+      <div className=' flex flex-col items-center lg:items-start lg:ml-40'>
+
         <div className='bg-white text-l p-3 rounded-md text-purple font-bold'>Welcome QuickSpace</div>
         <div className='text-4xl text-primary font-bold py-2 pt-7 '>Satisfied Customer</div>
         <div className='text-4xl text-primary font-bold py-2'>Is the Best Business</div>
         <div className='text-4xl text-primary font-bold py-2'>Strategy</div>
+       
         <div className='text-lg py-4 w-2/3 text-gray'>Backed with vast experience and fully up to date skills set, at Enuke Software offer the best in class E-Prescription solution
         </div>
+<div className='lg:flex lg:flex-row lg:gap-10'>
         <button 
         className='bg-button text-white py-4 px-20 font-semibold rounded-md'>Try Free
         </button>
         <div>
           <img className='w-28 py-7' src={viewDemo} alt="Click to view Demo" />
         </div>
+        </div>
+         </div>
+         
+      </div>  
 
       </div>
-      </div>
+      
 
-      <div className='flex flex-row justify-around py-8 bg-white'>
+      <div className='flex flex-row justify-around py-8 bg-white lg:justify-center lg:gap-48 lg:mb-20'>
         <img className='h-8'src={logo1} alt="Logo1" />
         <img className='h-8' src={logo2} alt="Logo2" />
         <img className='h-8' src={logo3} alt="Logo3" />
+        <img className='h-8 max-sm:hidden' src={logo4} alt="Logo4" />
+
       </div>
 
 
@@ -76,9 +95,15 @@ function App() {
       <div>
         <div>
           <div className=' flex flex-col items-center '>
-          <div className='text-4xl text-primary font-bold py-2 pt-7 '>Perfect Solution </div>
-          <div className='text-4xl text-primary font-bold py-2'>For Your Business</div>
-          <div className='text-lg py-4  text-gray flex flex-col items-center'>
+            <div className=' flex flex-col items-center lg:flex lg:flex-row lg:items-center lg:gap-2  '>
+          <div className='text-4xl text-primary font-bold py-2 pt-7 lg:pt-0 '>Perfect Solution </div>
+          <div className='text-4xl text-primary font-bold py-2 lg:pt-0'>For Your Business</div>
+          </div>
+          <div className='text-xl mt-8  text-gray flex flex-col items-center max-sm:hidden'>
+            <div>Graphs displaying your performance for metrics like follower evolution, average rate</div>
+            <div>per post and reach and impressions to give you the insights.</div>
+          </div>
+          <div className='text-lg py-4  text-gray flex flex-col items-center lg:hidden'>
           <span>Graphs displaying your performance for</span> 
           <span>metrics like follower evolution, average</span>
           <span> rate per post and reach and impressions</span>
@@ -86,11 +111,11 @@ function App() {
           </div>
           </div>
 
-          <div className='flex flex-col'>
+          <div className='flex flex-col lg:flex lg:flex-row lg:justify-around'>
 
-            <div className='flex flex-col rounded-lg mx-4 hover:shadow-2xl '>
+            <div className='flex flex-col rounded-lg mx-8 hover:shadow-2xl'>
               
-              <div className='ml-6'>
+              <div className='ml-6 lg:mx-12 lg:my-8'>
 
               <div className='mt-12'>
                 <img className='h-28 absolute' src={purpleRegtangle} alt="Purple Regtangle" />
@@ -115,9 +140,9 @@ function App() {
             </div>
 
             <div>
-            <div className='flex flex-col rounded-lg mx-4 hover:shadow-2xl '>
+            <div className='flex flex-col rounded-lg mx-8 hover:shadow-2xl '>
               
-              <div className='ml-6'>
+              <div className='ml-6 lg:mx-12 lg:my-8'>
 
               <div className='mt-12'>
                 <img className='h-28 absolute' src={orangeRegtangle} alt="Orange Regtangle" />
@@ -142,9 +167,9 @@ function App() {
             </div>
 
             <div>
-            <div className='flex flex-col rounded-lg mx-4 hover:shadow-2xl '>
+            <div className='flex flex-col rounded-lg mx-8 hover:shadow-2xl '>
               
-              <div className='ml-6'>
+              <div className='ml-6 lg:mx-12 lg:my-8'>
 
               <div className='mt-12'>
                 <img className='h-28 absolute' src={yellowRegtangle} alt="Yellow Regtangle" />
@@ -177,11 +202,15 @@ function App() {
         <div className='bg-background text-l p-3 rounded-md text-purple font-bold'>
         Discover & Explore
         </div>
-        <div className='text-3xl text-primary font-bold flex flex-col items-center my-4'>
+        <div className='text-3xl text-primary font-bold flex flex-col items-center my-4 lg:flex lg:flex-row lg:gap-2'>
           <div>Join An Attractive &</div>
           <div>Personaliozed</div>
-        </div>
-        <div className='text-lg pt-4  text-gray flex flex-col items-center'>
+          </div>
+          <div className='flex flex-col items-center text-lg text-gray max-sm:hidden'>
+            <div>Graphs displaying your performance for metrics like follower evolution, average rate</div>
+            <div>per post and reach and impressions to give you the insights. </div>
+          </div>
+        <div className='text-lg pt-4  text-gray flex flex-col items-center lg:hidden'>
         <div>Graphs displaying your performance for </div>
         <div>metrics like follower evolution, average </div>
         <div>rate per post and reach and impressions </div>
@@ -196,7 +225,7 @@ function App() {
 
     <div className='bg-white'>
       <div>
-
+<div className='lg:ml-48'>
         <div className='mt-32'>
           <img className='absolute h-24' src={blueCircle} alt="Blue Circle" />
           <img className='relative h-8 top-5 left-4' src={whiteQuote} alt="White Quote" />
@@ -205,8 +234,12 @@ function App() {
           <div>are Saying</div>
           </div>
         </div>
-        <div className='mt-20 ml-4'>
+        </div>
 
+        <div className='mt-20 ml-4 lg:flex lg:flex-row lg:justify-center lg:gap-48'>
+          
+
+<div>
           <div className='text-xl text-primary font-semibold'>
           <div>Great Services with Good Quality</div>
           <div>Photographers PhotoScape</div>
@@ -224,9 +257,12 @@ function App() {
             <div className='text-gray'>EhyaScape Client</div>
             </div>           
           </div>
-          <div className='h-px w-80 bg-gray mt-8'></div>
+          </div>
+          <div className='h-px w-80 bg-gray mt-8 lg:hidden'></div>
+          <div className='h-80 w-px bg-gray mt-8 max-sm:hidden'></div>
 
-          <div className='text-xl text-primary font-semibold mt-12'>
+<div>
+          <div className='text-xl text-primary font-semibold mt-12 lg:mt-0'>
           <div>Really love the Fast Delivery Photos</div>
           <div>File Service. Just 48 Hours. It’s Crazy!</div>
           </div>
@@ -243,6 +279,7 @@ function App() {
             <div className='text-gray'>EhyaScape Client</div>
             </div>           
           </div>
+          </div>
         </div>
       </div>
     </div>
@@ -250,9 +287,15 @@ function App() {
     <div className='bg-gradient-to-b from-background to-white mt-36 mb-12'>
 
       <div className='flex flex-col items-center'>
-        <div className='mt-10 text-2xl text-primary font-bold'>Expand your options with a</div>
+        <div className='flex flex-col items-center lg:flex lg:flex-row lg:mt-10'>
+        <div className='mt-10 text-2xl text-primary font-bold lg:mt-0'>Expand your options with a</div>
         <div className='text-2xl text-primary font-bold'>subscription</div>
-        <div className='flex flex-col items-center mt-8 text-gray'>
+        </div>
+        <div className='flex flex-col items-center mt-8 text-gray max-sm:hidden'>
+          <div>Graphs displaying your performance for metrics like follower evolution,average rate</div>
+          <div>per post and reach and impressions to give you the insights.</div>
+        </div>
+        <div className='flex flex-col items-center mt-8 text-gray lg:hidden'>
           <span>Graphs displaying your performance</span>
           <span> for metrics like follower evolution,</span>
           <span>average rate per post and reach and</span>
@@ -264,9 +307,9 @@ function App() {
           <span>Bill Anually</span>
         </div>
       </div>
-
+<div className='lg:flex lg:flex-row lg:justify-center lg:gap-5 '>
       <div className='flex flex-col mt-8 mx-2 bg-white rounded-xl hover:shadow-2xl'>
-        <div className='ml-12 mt-8'>
+        <div className='ml-12 mt-8 lg:mx-20'>
         <div className='flex flex-row items-center text-3xl text-primary font-bold'>
           <div>Base</div>
           <img className='h-10' src={dropVector} alt="Drop Down" />
@@ -302,8 +345,9 @@ function App() {
           </button>
         </div>
       </div>
+
       <div className='flex flex-col mt-8 mx-2 bg-white rounded-xl hover:shadow-2xl'>
-        <div className='ml-12 mt-8'>
+        <div className='ml-12 mt-8 lg:mx-20'>
         <div className='flex flex-row items-center text-3xl text-primary font-bold'>
           <div>Standard</div>
           <img className='h-10' src={dropVector} alt="Drop Down" />
@@ -340,7 +384,7 @@ function App() {
         </div>
       </div>
       <div className='flex flex-col mt-8 mx-2 bg-white rounded-xl hover:shadow-2xl'>
-        <div className='ml-12 mt-8'>
+        <div className='ml-12 mt-8 lg:mx-20'>
         <div className='flex flex-row items-center text-3xl text-primary font-bold'>
           <div>Unlimited</div>
           <img className='h-10' src={dropVector} alt="Drop Down" />
@@ -376,10 +420,13 @@ function App() {
           </button>
         </div>
       </div>
+      </div>
     </div>
 
-    <div className='bg-blue flex flex-col items-center pb-12'>
-      <div className='text-4xl text-primary font-bold flex flex-col items-center mt-8'>
+    <div className='bg-blue flex flex-col items-center pb-12 lg:pb-0 lg:bg-white'>
+      <div className='flex flex-col items-center lg:border-solid lg:bg-blue lg:py-16 lg:px-96 lg:rounded-3xl'>
+      <div className='text-4xl text-primary font-bold flex flex-col items-center mt-8
+      lg:flex lg:flex-row lg:gap-4'>
       <div>Sign up to our</div>
       <div> newsletter</div>
       </div>
@@ -389,12 +436,13 @@ function App() {
       Enter your email address
       </div>
       <div className='absolute '> 
-        <img className='h-12 relative top-56 left-28' src={slidekMark} alt="Slide Vector" />
+        <img className='h-12 relative top-56 left-28 lg:top-44' src={slidekMark} alt="Slide Vector" />
+      </div>
       </div>
       </div>
 
 
-      <div className='bg-white'>
+      <div className='bg-white lg:hidden'>
         <img className='w-64 mt-16 ml-4' src={logoa1} alt="Quick Space Logo" />
         <div className='text-gray mt-10 ml-4'>
           <span>Winged moving moveth created for shall and a</span>
@@ -428,6 +476,12 @@ function App() {
           </div>
         </div>
         <div className='flex flex-col items-center text-gray text-xl my-8'>Copyright ©2020 Quicklinks</div>
+      </div>
+
+      <div className='max-sm:hidden'>
+        <div>
+test
+        </div>
       </div>
 
 
